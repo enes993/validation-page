@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bzns Monster - Contact Form</title>
+
+<!-- Google Font : Poppins -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+<!-------Bootstrap css file------->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-------Fontawesome css file------->
+<link rel="stylesheet" href="css/all.min.css">
+
+<!-------Fontawesome css file------->
+<link rel="stylesheet" href="css/nice-select.css">
+
+<!-------style css file------->
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+ <!-------------------------------Header Section------------------------------------------->
+
+ <header>
+     <!------------------------NavBar------------------------->
+
+    <nav class="nav navbar navbar-expand-lg fixed-top bg-white p-0 pt-2">
+        <div class="container pb-0">
+            <a class="navbar-brand pull-left mb-2" href="#">
+                <button class="navbar-toggler  mr-auto hidden-sm-up float-xs-left" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <i class="fas fa-bars"></i>
+                  </button>
+                <img src="img/logo.jpg" width="35" height="35" alt="">
+            </a>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item dropdown bg-white">
+                            <a class="nav-link mr-2 dropdown-toggle pl-0 mb-2" href="#" id="navbardrop" data-toggle="dropdown">
+                                Try Demos 
+                            </a>
+
+                            <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><span>HTML email - download link</span></a>
+                                <a class="dropdown-item" href="#"><span>HTML email - attached file</span></a>
+                                <a class="dropdown-item" href="#"><span>Simple mail - download link</span></a>
+                                <a class="dropdown-item" href="#"><span>PHP mailer - attached file</span></a>
+                                <a class="dropdown-item" href="#"><span>PHP mailer - download link</span></a>
+                              </div>
+
+                        </li>
+
+                        <li class="nav-item dropdown bg-white">
+                            <a class="nav-link mr-2 dropdown-toggle pl-0 mb-2" href="#" id="navbardrop" data-toggle="dropdown">
+                            How HTML email looks like 
+                            </a>
+                            <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><span>File download link</span></a>
+                                <a class="dropdown-item" href="#"><span>File attachment</span></a>
+                                <a class="dropdown-item" href="#"><span>Confirmation</span></a>
+                              </div>
+                        </li>
+
+                        
+                        <li class="nav-item">
+                            <a><i class="fas fa-headset mr-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+            </div>
+       </div>
+     </nav>
+
+     <!------------------------Sub Bar------------------------->
+
+    <div class="sub-bar">
+         <div class="container">
+          <h1>HTML email - download link</h1>
+
+        </div>
+    </div>
+ </header>
+
+ <!-------------------------------Main Section------------------------------------------->
+
+ <main>
+
+   <div class="container">
+       <div class="row">
+<!-----------------------------First Side------------------------------->
+
+           <div class="col-md-8">         
+                       <!--------------------Personal Details----------------------------->
+                        <div class="row panel first">
+                            <div class="panel-header">
+                                <h3><span id="b1">1</span>Personal Details</h3>
+                                <p>Subtitle or short description can be set here.</p>
+                            </div>
+        
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control name" placeholder="Enter Full Name" id="text">
+                                </div>
+                                <div id="alertName" class="alert alert-danger d-none">
+                                    <strong class="text-danger pl-1">Invalid value :</strong> You have provided a wrong Name
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Enter VALID EMAIL and check the result" id="email">
+                                </div>
+                                <div id="alertEmail" class="alert alert-danger d-none">
+                                    <strong class="text-danger pl-1">Invalid value :</strong> You have provided a wrong Email
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <input type="tel" class="form-control phone" placeholder="Enter Phone e.g.: +363012345" id="tel">
+                                </div>
+                                <div id="alertTel" class="alert alert-danger d-none">
+                                    <strong class="text-danger pl-1">Invalid value :</strong> You have provided a wrong Telephone Number
+                                </div>
+                            </div>
+        
+                        </div>
+
+                       <!--------------------Subject----------------------------->
+
+                        <div class="row panel">
+                            <div class="panel-header">
+                                <h3><span id="b2">2</span>Subject</h3>
+                                <p>Subtitle or short description can be set here.</p>
+                            </div>
+        
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="hidden" id="subject" name="subject" value="General Information" />
+                                    <select id="subjectList" class="wide" name="subjectList">
+                                        <option value="0">General Information</option>
+                                        <option value="1">Subject Topic 1</option>
+                                        <option value="2">Subject Topic 2</option>
+                                        <option value="3">Subject Topic 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+        
+                        </div>
+
+
+                       <!--------------------Attachment----------------------------->
+
+                       <div class="row panel">
+                        <div class="panel-header">
+                            <h3><span id="b3">3</span>Attachment</h3>
+                            <p>Only jpg, png, pdf, max. 1Mb.</p>
+                        </div>
+    
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                    <p id="file" class="d-none text-center"><input type="file" accept="image/*" name="image" id="filea" onchange="loadFilea(event)" ></p>
+                                    <div id="panel" class="filepond--drop-label panel-file text-center" style="transform: translate3d(0px, 0px, 0px); opacity: 1;"><label  for="filea" style="cursor: pointer;">Drag &amp; Drop your files or <span class="filepond--label-action" tabindex="0">Browse</span></label></div>
+                                    <p id="ppp" class="d-none text-center"><img id="outputa" width="200" height="200"></p>
+                            </div>
+                        </div>
+
+    
+                    </div>
+
+                       <!----------------------Message------------------------------->                    
+
+                    <div class="row panel">
+                        <div class="panel-header">
+                            <h3><span id="b4">4</span>Message</h3>
+                            <p>Subtitle or short description can be set here.</p>
+                        </div>
+    
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <textarea class="form-control" rows="6" id="comment" placeholder="Enter Message"></textarea>
+                              </div>
+                              <div id="alertMsg" class="alert alert-danger d-none">
+                                <strong class="text-danger pl-1">Invalid value :</strong> Please Enter Your Message
+                            </div>
+                        </div>
+
+    
+                    </div>
+
+                       <!----------------------Submission------------------------------->                    
+
+                       <div class="row panel">
+                        <div class="panel-header">
+                            <h3><span id="b5">5</span>Submission</h3>
+                            <p>Subtitle or short description can be set here.</p>
+                        </div>
+    
+                        <div class="col-md-12 col-sm-12">
+                            <input  type="checkbox" class="inp-cbx" id="cbx"style="display: none" /><label class="cbx" for="cbx"><span id="boxy"><svg width="12px" height="10px" viewbox="0 0 12 10">
+                                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg></span><span>Accept <strong> Terms and Conditions</strong>.</span></label>
+                            <div id="alertBox" class="alert alert-danger d-none mt-2">
+                                <strong class="text-danger pl-1">Invalid value :</strong> Please Check Terms and Conditions box
+                            </div>
+                        </div>
+
+    
+                    </div>
+
+                       <!----------------------Message------------------------------->                    
+
+                       <div class="row panel"> 
+                        <div class="col-md-12 col-sm-12">
+                            <button type="submit" name="submit" class="submit">
+                                <span class="btn-content">Submit</span>
+                                <span class="icon"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+                            </button>
+                        </div>
+
+    
+                    </div>
+
+           </div>
+<!-----------------------------Second Side------------------------------->
+
+           <div class="col-md-4 mt-4 mt-md-0" id="sidebar">
+            <div id="contactInfoContainer" class="theiaStickySidebar">
+
+                       <!----------------------Address------------------------------->    
+
+                <div class="contact-panel">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <h2>Address</h2>
+                    <a href="https://www.google.com" target="_blank">1234 Street Name,
+                        City Name, USA</a>
+                </div>
+
+                       <!----------------------Email------------------------------->    
+
+                <div class="contact-panel">
+                    <i class="far fa-envelope contact-icon"></i>
+                    <h2>Email</h2>
+                    <a href="https://www.google.com" target="_blank">
+                        info@yourdomain.com</a>
+                </div>
+
+                       <!----------------------Telephone------------------------------->    
+
+                <div class="contact-panel">
+                    <i class="fas fa-phone-alt contact-icon"></i>
+                    <h2>Telephone</h2>
+                    <a href="tel:+3630123456789" target="_blank">+3630123456789</a>
+                </div>
+            </div>
+        </div>
+
+       </div>
+   </div>
+
+ </main>
+
+
+ <!-------------------------------Footer Section------------------------------------------->
+
+<footer>
+    <div class="container">  
+    <div class="row">
+        <div class="col-md-8">
+            <li class="nav-item"><a href="" class="nav-link ml-0 pl-0">With  by Enes</a></li>
+            <li class="nav-item"><a href="" class="nav-link"> Need Help?</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Purchase Sendy</a></li>
+        </div>
+        <div class="col-md-4">
+            <li class="nav-item copy float-left float-md-right"><a href="" class="nav-link mr-0 px-0">© 2021 BznsMonster</a></li>
+        </div>
+
+    </div>
+</div>
+</footer>
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/ResizeSensor.min.js"></script>
+<script src="js/theia-sticky-sidebar.min.js"></script>
+<script src="js/filepond-plugin-file-validate-size.js"></script>
+<script src="js/filepond-plugin-file-validate-type.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
