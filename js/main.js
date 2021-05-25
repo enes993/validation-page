@@ -55,7 +55,7 @@ function emailChecker(){
     let alertTel = document.querySelector('#alertTel')
     let tel = document.querySelector('#tel')
     function validateTel(val) {
-      let regTel = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
+      let regTel = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,4}$/im
       return regTel.test(val);
     }
     tel.onkeyup = function validate() {
